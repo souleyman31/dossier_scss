@@ -1,0 +1,45 @@
+header {
+	background-image: linear-gradient(
+			to right bottom,
+			rgba($color-primary-light, 0.8),
+			rgba($color-primary-dark, 0.8)
+		),
+		url(/advanced-css-course/Natours/after-S05/img/hero.jpg);
+	height: 100vh;
+	background-position: top;
+	clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+	position: relative;
+}
+.header_logo {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	& img {
+		height: 35px;
+	}
+}
+.header_box {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	backface-visibility: hidden;
+	text-align: center;
+	h1 {
+		text-transform: uppercase;
+		& span {
+			&:nth-child(1) {
+				display: block;
+				font-size: 3rem;
+				letter-spacing: 3rem;
+				animation: moveInLeft 3s linear;
+			}
+			&:nth-child(2) {
+				display: block;
+				font-size: 2rem;
+				letter-spacing: 0.75rem;
+				animation: moveInRight 3s linear;
+			}
+		}
+	}
+}
