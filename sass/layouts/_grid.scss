@@ -7,7 +7,7 @@
 	}
 	@include clearfix;
 	[class^="col-"] {
-		background-color: $color-red;
+		background-color: $color-grey;
 		float: left;
 		&:not(:last-child) {
 			margin-right: $gutter-horizontal;

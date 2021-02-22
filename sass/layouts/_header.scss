@@ -24,22 +24,7 @@ header {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	backface-visibility: hidden;
-	text-align: center;
-	h1 {
-		text-transform: uppercase;
-		& span {
-			&:nth-child(1) {
-				display: block;
-				font-size: 3rem;
-				letter-spacing: 3rem;
-				animation: moveInLeft 3s linear;
-			}
-			&:nth-child(2) {
-				display: block;
-				font-size: 2rem;
-				letter-spacing: 0.75rem;
-				animation: moveInRight 3s linear;
-			}
-		}
+	&:not(h1) {
+		text-align: center;
 	}
 }
